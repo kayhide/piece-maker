@@ -5,6 +5,8 @@
   "author": "Hideaki Kawai <kayhide@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "parcel": "^1.12.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }

@@ -1,2 +1,2 @@
-spago: spago bundle-app --watch --to public/index.js
-browser-sync: browser-sync start --server --ss public --files public --no-ui --no-notify
+parcel: $(yarn bin)/parcel public/index.html
+spago: spago build --watch

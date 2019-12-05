@@ -2,8 +2,7 @@ bundle:
 	spago bundle-app --to public/app.js
 
 dev:
-	@nix-shell --run "hivemind Procfile.dev"
+	@nix-shell --run "hivemind $${PORT:+--port $$PORT} --port-step 1 Procfile.dev"
 
-shell: HOST_SHELL = $$(bash -c "echo $$SHELL")
 shell:
-	@nix-shell --command "exec ${HOST_SHELL}"
+	@nix-shell --command "exec $$(bash -c "echo $$SHELL")"

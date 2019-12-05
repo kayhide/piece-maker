@@ -10,6 +10,10 @@ You can edit this file as you like.
     , "foreign-generic"
     , "psci-support"
     , "random"
+    , "react-basic"
+    , "web-dom"
+    , "web-events"
+    , "web-html"
     ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
