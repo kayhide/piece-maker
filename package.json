@@ -1,0 +1,10 @@
+{
+  "name": "piece-maker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hideaki Kawai <kayhide@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

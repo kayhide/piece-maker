@@ -1,0 +1,2 @@
+spago: spago bundle-app --watch --to public/index.js
+browser-sync: browser-sync start --server --ss public --files public --no-ui --no-notify
