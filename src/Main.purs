@@ -2,7 +2,7 @@ module Main where
 
 import Prelude
 
-import Counter (counter)
+import Components.App as App
 import Data.Maybe (Maybe(..))
 import Effect (Effect)
 import Effect.Exception (throw)
@@ -17,7 +17,4 @@ main = do
   container <- getElementById "container" =<< (map toNonElementParentNode $ document =<< window)
   case container of
     Nothing -> throw "Container element not found."
-    Just c  ->
-      let app = counter { label: "Increment" }
-      in
-       render app c
+    Just c  -> render App.app c
